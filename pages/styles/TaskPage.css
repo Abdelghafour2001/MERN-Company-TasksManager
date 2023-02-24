@@ -1,0 +1,12 @@
+.task-page {
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+    transition: var(--transition-duration);
+}
+
+.task-page.blink {
+    background: var(--color-main);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    min-height: 10vh;
+}

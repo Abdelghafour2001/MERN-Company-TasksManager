@@ -1,0 +1,148 @@
+.calender {
+    padding-bottom: 100px;
+}
+
+.calender-header .flex {
+    flex-wrap: wrap;
+}
+
+.calender .calender-header {
+    /* display: flex; */
+    justify-content: space-between;
+    max-width: 1780px;
+    margin: 0 auto;
+    background: var(--color-main);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-secondary);
+}
+
+.zoom-calender {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1780px;
+}
+.calender .calender-header .calender-header-left {
+    display: flex;
+}
+
+.business-control,
+.select-control {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.calender .calender-header .calender-header-right {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin: 10px 0;
+}
+
+.calender-header .btn:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.calender .today-control,
+.calender .print-control {
+    margin: 0 10px;
+}
+
+.calender .print {
+    padding: 10px 10px;
+    height: 21px;
+    max-height: 21px;
+}
+
+.calender .date {
+    padding: 10px 10px;
+    font-weight: 600;
+}
+
+.react-datepicker__input-container {
+    background: var(--color-main);
+}
+
+.calender svg {
+    height: inherit;
+    width: 20px;
+}
+
+.calender .date {
+    align-self: center;
+}
+
+/* override default style of a DayPicker */
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+    background-color: var(--color-primary)!important;
+    color: var(--text-light)!important;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+    background-color: var(--color-primary)!important;
+    color: var(--text-light)!important;
+    border: 2px solid var(--color-primary);
+}
+
+.react-datepicker__month-container {
+    background-color: var(--color-main)!important;
+    color: var(--text-dark)!important;
+}
+
+.react-datepicker__day--outside-month {
+    opacity: 0.5!important;
+}
+
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+    color: var(--text-dark)!important;
+    font-size: 1.2rem!important;
+}
+
+.react-datepicker {
+    color: var(--text-dark)!important;
+    border: 1px solid var(--color-secondary)!important;
+    font-size: 1rem!important;
+}
+
+.react-datepicker__header {
+    padding: 10px 10px!important;
+}
+
+.react-datepicker__month {
+    margin: 1rem!important;
+}
+
+.date-control {
+    height: fit-content;
+}
+
+@media (max-width: 640px) {
+    .calender-header .flex {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calender-header-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .calender-header-right .flex:first-child {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .calender .date-control,
+    .calender .today-control,
+    .calender .select-control,
+    .calender .print-control,
+    .calender .business-control{
+        margin: 5px 5px;
+        width: 100%;
+    }
+}

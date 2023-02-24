@@ -1,0 +1,71 @@
+.card {
+    background: var(--color-main);
+    border-radius: var(--border-radius);
+    /* box-shadow: var(--box-shadow); */
+    margin-bottom: 1rem;
+    /* overflow: hidden; */
+    /* border: 1px solid var(--color-secondary); */
+}
+/* 
+.card.blink {
+    min-height: 450px
+} */
+
+.card-title {
+    padding: 1rem;
+    transition: var(--transition-duration);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    background: var(--color-main);
+    position: relative;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-secondary);
+}
+
+.card-title svg {
+    fill: var(--text-dark);
+    font-weight: bold;
+    stroke: var(--text-dark);
+    stroke-width: 3px;
+    transform: rotate(180deg);
+    transition: var(--transition-duration);
+}
+
+.card.open .card-title svg {
+    transform: rotate(0deg);
+}
+
+.card-title:active {
+    background: var(--color-secondary-light);
+}
+
+.card-body {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: var(--transition-duration);
+    /* background: var(--color-secondary-light); */
+}
+
+.card .card-body.open {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    padding: 1rem 0;
+}
+/* 
+.blink .card-title {
+    min-height: 2rem;
+    font-weight: 800;
+    background: var(--color-secondary-light);
+    border-radius: var(--border-radius);
+} */
+
+/* .blink .card-body {
+    min-height: 400px;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+    background: var(--color-secondary-light);
+} */

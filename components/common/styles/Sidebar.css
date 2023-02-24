@@ -1,0 +1,122 @@
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    transition: var(--transition-duration);
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.page .businesses {
+    margin: 0;
+}
+
+.page section {
+    overflow: hidden;
+    padding: 0 1rem;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.page.sidebar-open {
+    grid-template-columns: 200px 1fr;
+}
+
+.page.sidebar-closed {
+    grid-template-columns: 80px 1fr;
+}
+
+.sidebar-container {
+    padding-left: 1rem;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.sidebar {
+    background: var(--color-main);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.sidebar-header svg {
+    transform: rotate(90deg);
+    transition: var(--transition-duration);
+}
+
+.sidebar-closed .sidebar-header svg {
+    transform: rotate(180deg);
+}
+
+.sidebar-header .btn {
+    padding: 4px;
+}
+
+.sidebar-body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.sidebar-body-item {
+    padding: 1rem;
+    border-left: 3px solid var(--color-main);
+    transition: var(--transition-duration);
+    color: var(--text-dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-body-item svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.sidebar-closed .sidebar-body-item svg {
+    margin: 0;
+}
+
+.sidebar-body-item.active,
+.sidebar-body-item:hover {
+    border-color: var(--color-primary);
+}
+
+@media (max-width: 576px) {
+    .page {
+        display: block;
+    }
+
+    .page section {
+        padding: 0;
+        overflow: unset;
+    }
+
+    .sidebar-header svg {
+        transform: rotate(0);
+    }
+
+    .sidebar-closed .sidebar-header svg {
+        transform: rotate(0);
+        transform: rotate(180deg);
+    }
+
+    .sidebar {
+        overflow: hidden;
+    }
+
+    .sidebar-closed .sidebar-body {
+        height: 0;
+        display: none;
+    }
+
+    .sidebar-container {
+        padding: 1rem 0;
+    }
+}
