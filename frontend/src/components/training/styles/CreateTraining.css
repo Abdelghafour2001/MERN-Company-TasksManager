@@ -1,0 +1,17 @@
+.create-training {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.training-section-item {
+    background: var(--color-secondary-light);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    margin: 1rem 0;
+    transition: var(--transition-duration);
+}
+
+.training-section-item:hover {
+    box-shadow: var(--box-shadow);
+}

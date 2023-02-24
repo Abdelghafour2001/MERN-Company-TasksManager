@@ -1,0 +1,125 @@
+.businesses {
+    /* display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(550px, 1fr) );
+    gap: 25px; */
+    /* justify-content: center; */
+    margin-bottom: 25px;
+    max-width: 1050px;
+    margin: 0 auto 25px auto;
+}
+
+.business-card {
+    background: var(--color-main);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    overflow: hidden;
+    border: 1px solid var(--color-secondary);
+}
+
+.business-card.blink {
+    min-height: 50vh;
+}
+
+.business-card.blink .business-card-header {
+    min-height: 120px;
+    background: var(--color-secondary);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.business-card.blink .business-card-body-employee {
+    height: 80px;
+}
+
+.business-card-header {
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    background: var(--color-main);
+    position: relative;
+}
+
+.business-card-body {
+    background: var(--color-secondary-light);
+}
+
+.business-card-header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.business-card-header-info:first-of-type .business-card-header-info-left {
+    padding: 0 10px;
+}
+
+.business-card-header-info a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.business-card-header-info-left {
+    margin-right: 1rem;
+}
+
+.business-card-header-info-left,
+.business-card-header-info-right {
+    display: flex;
+    align-items: center;
+}
+
+.business-card .btn-icon {
+    width: 30px;
+    height: 30px;
+    transition: var(--transition-duration);
+    margin-left: 15px;
+}
+.business-card .btn-icon:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.business-card-header-info:first-of-type p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 3px 5px;
+}
+
+.business-card-header-info p {
+    font-size: 1rem;
+}
+
+.business-card-header svg {
+    width: 20px;
+    height: 20px;
+}
+
+.business-card-header-info-left svg {
+    margin-right: 5px;
+}
+
+.business-card-header-info-right svg {
+    margin-left: 5px;
+}
+
+.business-card-header-info-right .modal-body .modal-content,
+.company-card .modal-body .modal-content {
+    max-height: 50vh;
+    min-height: auto;
+    overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+    .business-card-header-info-left p,
+    .business-card-header-info-right p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .business-card-header-info-left {
+        max-width: 150px;
+    }
+}

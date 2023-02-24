@@ -1,0 +1,24 @@
+.create-task-list-container {
+    background-color: var(--color-main);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 5px 1rem;
+}
+
+.create-task-item {
+    background: var(--color-secondary-light);
+    padding: 1px 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    transition: var(--transition-duration);
+}
+
+.create-task-item:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.create-task-items {
+    border-top: 1px solid var(--color-secondary);
+    padding-top: 1rem;
+    margin-top: 2rem;
+}

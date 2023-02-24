@@ -1,0 +1,36 @@
+.message-card {
+    background: var(--color-main);
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.message-card-header {
+    text-transform: capitalize;
+    padding-bottom: 0.5rem;
+}
+
+.message-card-body {
+    padding: 0.5rem 0;
+}
+
+.message-card-footer-title {
+    border-top: 1px solid var(--color-secondary);
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.message-card-footer-body {
+    opacity: 0;
+    animation: opacity var(--transition-duration) forwards;
+}
+
+.open-icon {
+    transform: rotate(180deg);
+    transition: var(--transition-duration);
+}
+
+.open-icon.open {
+    transform: rotate(0deg);
+}

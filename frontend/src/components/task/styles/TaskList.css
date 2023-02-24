@@ -1,0 +1,62 @@
+.task-list-content {
+    background: var(--color-main);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.task-list-description svg {
+    width: 25px;
+    height: 25px;
+    /* border-bottom: 1px solid var(--color-primary); */
+    padding-bottom: 5px;
+}
+
+.task-list-description {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.task-list-detail {
+    /* width: auto; */
+    text-transform: capitalize;
+}
+
+.task-list-description-top {
+    padding-bottom: 0.5rem;
+}
+
+.task-list-description-bottom {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.task-list-content .task-item {
+    background: var(--color-secondary-light);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0;
+    transition: var(--transition-duration);
+}
+
+.task-item.completed .task-info h3,
+.task-item.completed .task-info p {
+    opacity: .5;
+    text-decoration: line-through;
+}
+
+.task-item .task-info p {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.25rem;
+    border-top: 1px solid var(--color-secondary);
+}
+
+.task-list-content .task-item:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.task-list-content .task-item h3 {
+    max-width: fit-content;
+}
